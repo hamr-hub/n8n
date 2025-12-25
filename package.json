@@ -3,11 +3,12 @@
   "version": "2.2.0",
   "private": true,
   "engines": {
-    "node": ">=22.16",
+    "node": ">=24.12.0",
     "pnpm": ">=10.22.0"
   },
   "packageManager": "pnpm@10.22.0",
   "scripts": {
+    "check:node": "node scripts/check-node-version.js",
     "prepare": "node scripts/prepare.mjs",
     "preinstall": "node scripts/block-npm-install.js",
     "build": "turbo run build",
@@ -95,7 +96,7 @@
       "@lezer/common": "^1.2.0",
       "@mistralai/mistralai": "^1.10.0",
       "@n8n/typeorm>@sentry/node": "catalog:",
-      "@types/node": "^20.17.50",
+      "@types/node": "^24.12.0",
       "axios": "1.12.0",
       "chokidar": "4.0.3",
       "esbuild": "^0.25.0",
